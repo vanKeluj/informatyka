@@ -1,0 +1,5 @@
+print("Jestem w lekcji informatyki")
+print("Pracuje w trybie skryptowym")
+print("Julek")
+print("cos")
+print("masło")
