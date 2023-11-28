@@ -41,6 +41,3 @@ while running:
     dt = clock.tick(60) / 1000
 
 pygame.quit()
-
-
-#py -m pip install -U pygame --user  -  by zainstalować pygame
