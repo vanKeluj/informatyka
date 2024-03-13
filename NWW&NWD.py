@@ -30,12 +30,18 @@ def odrekNWD(a,b):
             b = b - a
     return a
 
-#print(NWD(32,44))
-#print(rekNWD(32,44))
-#print(odNWD(32,44))
-#print(nww(32,44))
+print(NWD(32,44))
+print(rekNWD(32,44))
+print(odNWD(32,44))
+print(nww(32,44))
 
 l = int(input("Podaj licznik: "))
 m = int(input("Podaj minanownik: "))
 
-if NWD
+def skrocenie(l,m):
+    nwd = (NWD(l,m))
+    l = l /nwd
+    m = m / nwd
+    return (l,m)
+
+print(skrocenie(l,m))
