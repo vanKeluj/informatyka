@@ -14,6 +14,7 @@ def skrocenie(a,b):
     b = b / nwd
     u = [a,b]
     return u
+
 l1 = int(input("Podaj pierwszy licznik: "))
 m1 = int(input("Podaj pierwszy minanownik: "))
 l2 = int(input("Podaj drugi licznik: "))
