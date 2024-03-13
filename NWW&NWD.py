@@ -38,10 +38,10 @@ print(nww(32,44))
 l = int(input("Podaj licznik: "))
 m = int(input("Podaj minanownik: "))
 
-def skrocenie(l,m):
-    nwd = (NWD(l,m))
-    l = l /nwd
-    m = m / nwd
+def skrocenie(a,b):
+    nwd = (NWD(a,b))
+    a = a /nwd
+    b = b / nwd
     return (l,m)
 
 print(skrocenie(l,m))
