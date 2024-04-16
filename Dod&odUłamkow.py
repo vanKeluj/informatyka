@@ -65,7 +65,6 @@ def od(a, b, c, d):
     else:
         return False
 
-
 print("Dodawanie: ", dod(l1, m1, l2, m2))
 print("Dodawanie: ", NWWdod(l1, m1, l2, m2))
 print("Mnożene: ", mnoz(l1, m1, l2, m2))
