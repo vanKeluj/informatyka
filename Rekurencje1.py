@@ -1,10 +1,10 @@
 print ("start")
-def wieze_hanoi(krazki, z, pomocnicza, na):
+def wieze_hanoi(krazki, z, do, pomoc):
     if krazki == 1:
-        print(f"Przenies krążek 1 z {z} do {na}")
+        print("Przenieś krążek 1 z", z, "do", do)
         return
-    wieze_hanoi(krazki-1, z, na, pomocnicza)
-    print(f"Przenies krążek {krazki} z {z} do {na}")
-    wieze_hanoi(krazki-1, pomocnicza, z, na)
+    wieze_hanoi(krazki-1, z, pomoc, do)
+    print("Przenieś krążek", krazki, "z", z, "do", do)
+    wieze_hanoi(krazki-1, pomoc, do, z)
 
 wieze_hanoi(3, 'A', 'B', 'C')
