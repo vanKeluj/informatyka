@@ -1,3 +1,22 @@
+hexadecimal_Dict = {
+    10 : "A",
+    11 : "B",
+    12 : "C",
+    13 : "D",
+    14 : "E",
+    15 : "F"
+}
+
+rev_hexadecimal_Dict = {
+    "A": 10,
+    "B": 11,
+    "C": 12,
+    "D": 13,
+    "E": 14,
+    "F": 15
+}
+
+
 def decimal_to_hexadecimal(decimal_num):
     hexadecimal_num = []
     while decimal_num > 0:
@@ -5,18 +24,18 @@ def decimal_to_hexadecimal(decimal_num):
         if remainder < 10:
             hexadecimal_num.insert(0, remainder)
         else:
-            hexadecimal_num.insert(0, chr(ord('A') + remainder - 10))
+            hexadecimal_num.insert(0, hexadecimal_Dict[remainder])
         decimal_num //= 16
     return hexadecimal_num
 
 def hexadecimal_to_decimal(hexadecimal_num):
     decimal_num = 0
     power = 0
-    for digit in reversed(hexadecimal_num):
-        if digit.isdigit():
-            decimal_num += int(digit) * (16 ** power)
+    for character in reversed(hexadecimal_num):
+        if character.isdigit():
+            decimal_num += int(character) * (16 ** power)
         else:
-            decimal_num += (ord(digit.upper()) - ord('A') + 10) * (16 ** power)
+            decimal_num += (rev_hexadecimal_Dict[character] ) * (16 ** power)
         power += 1
     return decimal_num
 
