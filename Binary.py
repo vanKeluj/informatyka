@@ -5,8 +5,8 @@ def decimal_to_binary(n):
         return [0]
     
     while n > 0:
-        ones = n % 2
-        binary_return.insert(0, ones)
+        reminder = n % 2
+        binary_return.insert(0, reminder)
         n = n // 2
     
     return binary_return
