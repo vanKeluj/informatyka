@@ -17,7 +17,7 @@ def wydaj_reszte(reszta):
             x += K[i]
     
     print("Liczba nominałów wydanych", x)
-
+    
     return K
 
 # Przykładowe użycie
