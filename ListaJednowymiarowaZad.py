@@ -11,7 +11,7 @@ f)	Sprawdzenie czy na wczytanej liście znajduje się element, którego wartoś�
 lista  =  [9, 4, 3, 5, 7, 9, 4, 2, 1, 5]
 
 
-#region Zadania
+#region Code Zadań
 # a) Wypisanie wszystkich elementów listy
 
 
