@@ -4,21 +4,16 @@
 11	13	15
 16	18	20
 '''
-def generate_list():
-    lista = []
-    
-    for start in range(1, 17, 5): 
-        lista.append([start, start+2, start+4]) 
-    
-    return lista
 
-lista = generate_list()
-def zad_a(lista, numWiersz, numKolumn):
+def zad_a(numWiersz, numKolumn):
+    lista = []
+    for row in range(numWiersz):
+        lista.append([(1+row*5)+(2*col) for col in range(numKolumn)])
+    
     print ("Lista: ")
     for row in lista:
         print(row)
-    print(f"Elemnet listy w kolunnie {numKolumn+1} i w wierszu {numWiersz+1} to {lista[numWiersz][numKolumn]}") 
 
-kolumna = int(input("Podaj index kolumny: ")) - 1
-wiersz = int(input("Podaj index wiersza: ")) - 1
-zad_a(lista, wiersz, kolumna)
+kolumna = int(input("Podaj ilość kolumn: "))
+wiersz = int(input("Podaj ilość wierszy: "))
+zad_a(wiersz, kolumna)
