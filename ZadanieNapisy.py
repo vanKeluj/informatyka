@@ -34,13 +34,7 @@ print(tekst.replace('s',''))
 
 # f) Obliczenie liczby znaków różnych od 'd', które mają indeks podzielny przez 3
 print(len(tekst[::3].replace('d','')))
-def f():
-    diff_d_count = 0
-    for char in range((len(tekst))-1):
-        if char % 3 == 0 and tekst[char] != 'd':
-            diff_d_count += 1
-    return diff_d_count
-print(f())
+
 
 # g) Zamiana znaków 'm' na 'R'
 print(tekst.replace('m', 'R'))
