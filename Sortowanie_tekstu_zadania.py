@@ -75,4 +75,4 @@ def zad_2(string):
     return string_return
 
 zad2string = "9876 123 76547 4343 898 2345"
-print(zad_2(zad2strig))
+print(zad_2(zad2string))
