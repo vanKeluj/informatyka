@@ -1,4 +1,4 @@
-TaskFile = open("3rdInputToTask.txt","r")
+TaskFile = open("AdventOfCode2024/3rdInputToTask.txt","r")
 
 def zadanie(line):
     diffs = [a-b for a,b in zip(line, line[1:])]

@@ -1,4 +1,4 @@
-Input_to_read = open("1stInputToTaks.txt","r")
+Input_to_read = open("AdventOfCode2024/1stInputToTaks.txt","r")
 
 def check_distance(file):
     left = []
