@@ -2,10 +2,10 @@ import re
 
 TaskFile = open("AdventOfCode2024/7thInputToTask.txt","r")
 
-def Is_Xmas_Horizontal(Horizontal):
+def Is_There_X_mas(Characters):
     count = 0
     Check = ['MMASS', 'SSAMM', 'MSAMS', 'SMASM']
-    if Horizontal in Check:
+    if Characters in Check:
         count += 1
     return count
 
@@ -28,7 +28,7 @@ def Count_Xmas(file):
         for i in DiagonalR:
             for x in i:
                 String += x
-            count += Is_Xmas_Horizontal(String)
+            count += Is_There_X_mas(String)
             String = ""
 
     return count
