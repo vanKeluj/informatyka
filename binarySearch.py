@@ -1,6 +1,4 @@
 def szukaj(arr, low, high, x):
- 
-    # Check base case
     if high >= low:
  
         mid = (high + low) // 2
@@ -24,8 +22,8 @@ def szukaj(arr, low, high, x):
 
 # Przykładowe wywołanie
 T = [-8, -7, -6, -2, 0, 2, 3, 4, 5, 7, 8, 10, 12, 13, 17, 19]
-szukana = -7
+szukana = 15
 wynik = szukaj(T, 0, len(T) - 1, szukana)
 
-if wynik != -1:
-    print(wynik)
+
+print(wynik)
