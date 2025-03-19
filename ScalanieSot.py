@@ -59,7 +59,7 @@ def mergeSort(arr, l, r):
 
 
 # Driver code to test above
-arr = [4, 5, 2, 1, 9, 8, 7, 0, 3]
+arr = [3, 8, 2, 0, 5, 30, 1, 9]
 n = len(arr)
 print("Nie posotrtowana lista:")
 print(arr)
