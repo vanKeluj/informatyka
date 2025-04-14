@@ -8,5 +8,5 @@ def Pierwiastek(p,E,L):
 
 print(Pierwiastek(10, 0.00001, 50))
 print(Pierwiastek(125, 0.001, 50))
-print(Pierwiastek(1024, 0.001, 50))
+print(Pierwiastek(1048, 0.001, 50))
 print(Pierwiastek(2000, 0.001, 50))
