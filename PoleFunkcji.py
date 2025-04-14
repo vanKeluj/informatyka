@@ -17,9 +17,9 @@ def PoleTrapez(p,q,n,f):
     s = 0
     
     for i in range(n):
-        s += math.fabs(f(p+i*dl))
+        s += abs(f(p+i*dl))
     
-    P = dl/2*(math.fabs(f(p)) + math.fabs(f(q)) + 2*s)
+    P = dl/2*(abs(f(p)) + abs(f(q)) + 2*s)
     
     return P
 
