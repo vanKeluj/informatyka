@@ -1,11 +1,10 @@
 import math
-
 def szyfr(word, key):
   returnWord = ''
   kolumns = []
   workword = "".join([litera.upper() for litera in word])
-  repeat = math.ceil(len(workword) / len(key))
-
+  repeat = math.ceil(len(workword)/len(key))
+  
   for i in range(repeat):
     tempList = []
     for j in workword[:len(key)]:
@@ -19,33 +18,36 @@ def szyfr(word, key):
         returnWord += kolumns[j][key[i]]
       except:
         pass
-
+    
   return returnWord
 
 
-
 def deszyfr(word, key):
-  returnWord = ''
+  workword = "".join([litera.upper() for litera in word])
+  workword2 = "".join([litera.upper() for litera in word])
+  tempList = []
+  print(tempList)
+
   kolumns = []
-  kolumnWord = "".join([litera.upper() for litera in word])
-  workWord = "".join([litera.upper() for litera in word])
-  repeat = math.ceil(len(word) / len(key))
+  repeat = math.ceil(len(workword)/len(key))
 
-  for i in range(repeat):
-    tempList = []
-    for j in kolumnWord[:len(key)]:
+  for i in range(math.ceil(len(workword)/len(key))):
+    for j in workword[:len(key)]:
       tempList.append('*')
-    kolumns.append(tempList)
-    kolumnWord = kolumnWord[5:]
 
+    kolumns.append(tempList)
+    tempList = []
+
+    workword = workword[len(key):]
+
+  returnWord = ''
   for i in range(5):
     for j in range(repeat):
       try:
-        kolumns[j][key[i]] = workWord[:1]
-        workWord = workWord[1:]
+        kolumns[j][key[i]] = workword2[:1]
+        workword2 = workword2[1:]
       except:
         pass
-
   for i in kolumns:
     for j in i:
       returnWord += j
@@ -53,6 +55,5 @@ def deszyfr(word, key):
   return returnWord
 
 
-
-print(szyfr('KRYPTOANALIZA', [2, 1, 4, 0, 3]))
+print(szyfr('KRYPTOANALIZA', [2,1,4,0,3]))
 print(deszyfr('CŚIPWIEZAZOBAHYIZNUIĆEOAURICWZRCLMAM', [3, 2, 0, 1]))
